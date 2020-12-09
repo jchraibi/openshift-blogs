@@ -31,17 +31,17 @@ In order to understand how all this works, let's get back to some basics: Operat
 
 **Custom Resource Definitions (CRDs)** allow to extend Kubernetes/OpenShift apis with custom resources, thus allowing to control their lifecycle through the controller.
 
-That is exactly what the Prometheus Operator does in OpenShift. We have a CustomResourceDefinition called "ServiceMonitor" that allows us to quickly says "here are the metrics I want to monitor in Prometheus" and the Controller does what is needed to configure the Prometheus scraping. For an in-depth understanding of the Prometheus Operator and ServiceMonitors please read the [following coreos.com blog post](https://coreos.com/blog/the-prometheus-operator.html)
+That is exactly what the Prometheus Operator does in OpenShift. We have a CustomResourceDefinition called **"ServiceMonitor"** that allows us to quickly says "here are the metrics I want to monitor in Prometheus" and the Controller does what is needed to configure the Prometheus scraping. For an in-depth understanding of the Prometheus Operator and ServiceMonitors please read the [following coreos.com blog post](https://coreos.com/blog/the-prometheus-operator.html)
 
 
-Your own application needs to expose a Prometheus metrics endpoints (usually /metrics), and then you'll need to create a ServiceMonitor that targets the service that exposes your application workload.
+Your own application needs to expose a Prometheus metrics endpoints (usually /metrics), and then you'll need to create a **ServiceMonitor** that targets the service that exposes your application workload.
 
 The following diagram shows the relationships between these constructs:
 ![4-prometheus-operator](./assets/4-prometheus-operator.png)
 
 
 
-Below is an example of a ServiceMonitor that will be automatically ingested by the Prometheus Controller to create a custom query that will be available in the drop-down list of the OpenShift Developer Console (see beginning of the blog post):
+Below is an example of a **ServiceMonitor** that will be automatically ingested by the Prometheus Controller to create a custom query that will be available in the drop-down list of the OpenShift Developer Console (see beginning of the blog post):
 
 ```
 apiVersion: monitoring.coreos.com/v1
@@ -62,7 +62,7 @@ spec:
 
 Hopefully this blog post would have given you an overview of this new feature in OpenShift 4.6 release. 
 
-If you wish to configure a custom metric monitoring for your application, you can find detailed instructions here: https://github.com/redhat-scholars/openshift-admins-devops/blob/v4.6blog/documentation/modules/ROOT/pages/metrics-alerting.adoc
+If you wish to configure a custom metric monitoring for your application, you can find **detailed instructions** here: https://github.com/redhat-scholars/openshift-admins-devops/blob/v4.6blog/documentation/modules/ROOT/pages/metrics-alerting.adoc
 
 
 
