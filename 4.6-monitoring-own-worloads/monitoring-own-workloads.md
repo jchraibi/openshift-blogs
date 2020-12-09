@@ -1,4 +1,4 @@
-## Monitoring your own workloads in the OpenShift Developer Console in OpenShift Container Platform 4.6
+## Monitoring your own workloads in the Developer Console in OpenShift Container Platform 4.6
 
 Every new release of OpenShift Container Platform comes with its set of treats for developers, and in the 4.6 release there is a new feature that lets you monitor your own application metrics within the developer console. In this blog post, we'll have an overview of this new capability and show you how to enable it.
 
