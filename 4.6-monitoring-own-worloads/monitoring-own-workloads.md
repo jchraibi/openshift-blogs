@@ -27,7 +27,7 @@ So with this feature, you are now able to publish your own prometheus metrics en
 **The Prometheus Operator**
 
 In order to understand how all this works, let's get back to some basics: Operators and CustomResourceDefinitions.
-**Operators** are a construct that allows to add custom behavior to Kubernetes/OpenShift by creating custom Controllers that will react to events on Kubernetes resources, for instance when one is created.
+**Operators** are a construct that allow to add custom behavior to Kubernetes/OpenShift by creating custom Controllers that will react to events on Kubernetes resources, for instance when one is created, and apply appropriate processing like applying configurations etc.
 
 **Custom Resource Definitions (CRDs)** allow to extend Kubernetes/OpenShift apis with custom resources, thus allowing to control their lifecycle through the controller.
 
