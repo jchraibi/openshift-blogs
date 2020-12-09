@@ -1,6 +1,6 @@
 Every new release of OpenShift Container Platform comes with its set of treats for developers, and in the 4.6 release there is a new feature that lets you monitor your own application metrics within the developer console. In this blog post, we'll have an overview of this new capability and show you how to enable it.
 
-**1 - Show me the Mon(ey)itoring!!**
+## 1 - Show me the Mon(ey)itoring!!
 
 You might probably be familiar with the Monitoring dashboard that shows the pure pod metrics like CPU and Memory usage, Network Bandwidth etc that existed since OpenShift 3 in the console, but if not, here is what it looks like:
 
@@ -20,7 +20,7 @@ The resulting chart for the workload custom metric is shown below:
 
 So with this feature, you are now able to publish your own prometheus metrics endpoints in your applications and easily render them in the developer console.
 
-**2 - That's great, so how does all this work?**
+## 2 - That's great, so how does all this work?
 
 **The Prometheus Operator**
 
@@ -56,7 +56,7 @@ spec:
       app: metrics-app
 ```
 
-**Getting your hands-on: configuring a custom metric**
+## 3- Getting your hands-on: configuring a custom metric
 
 Hopefully this blog post would have given you an overview of this new feature in OpenShift 4.6 release. 
 
