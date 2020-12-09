@@ -41,7 +41,7 @@ The following diagram shows the relationships between these constructs:
 
 Below is an example of a ServiceMonitor that will be automatically ingested by the Prometheus Controller to create a custom query that will be available in the drop-down list of the OpenShift Developer Console (see beginning of the blog post):
 
-----
+```
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
@@ -54,7 +54,7 @@ spec:
   selector:
     matchLabels:
       app: metrics-app
-----
+```
 
 **Getting your hands-on: configuring a custom metric**
 
