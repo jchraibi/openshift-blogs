@@ -5,7 +5,7 @@ Every new release of OpenShift Container Platform comes with its set of treats f
 You might probably be familiar with the Monitoring dashboard that shows the pure pod metrics like CPU and Memory usage, Network Bandwidth etc that existed since OpenShift 3 in the console, but if not, here is what it looks like:
 
 
-![1-dashboard](./assets/1-dashboard.png)
+![1-dashboard](/assets/1-dashboard.png)
 
 
 With OpenShift 4.6, we've extended this capability to show custom Prometheus metrics from your workloads in the developer console. So as a developer, I can go to the **Monitoring -> Metrics** section and look for a **Custom Query** that is exposed by my application, and then get a rendered graphic in that portion of the UI. Here is an example of that:
